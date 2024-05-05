@@ -43,7 +43,7 @@ func parseArgs() (string, string) {
 		panic("Not enough args. Need file to parse (.txt), folder to dump.")
 	}
 	file_to_pars := os.Args[1]
-	out_dir = path.Join("..", os.Args[2])
+	out_dir := path.Join("..", os.Args[2])
 	return file_to_pars, out_dir
 }
 
